@@ -1,0 +1,76 @@
+.user-profile {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px #ccc;
+  border-left: 4px solid tomato;
+}
+
+.profile-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.save-btn {
+  background: tomato;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.address-section {
+  margin-top: 2rem;
+}
+
+.address-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.address-section li {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.new-address {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.new-address input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.new-address button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dlt-btn {
+  background: green;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
