@@ -1,12 +1,72 @@
-# React + Vite
+# 🍽️ FoodRush - Frontend (User Interface)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **Frontend** of the FoodRush food ordering application where users can browse dishes, add items to the cart, apply promo codes, place orders, and manage their profile.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Features
 
-## Expanding the ESLint configuration
+✅ User Signup/Login  
+✅ Browse and filter menu items  
+✅ Add/Remove items in cart  
+✅ Apply promo codes (FLAT10 / FLAT25 / FLAT50)  
+✅ Place orders using RazorPay  
+✅ View and track past orders  
+✅ Update profile and manage addresses  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+| Type       | Tools Used                                         |
+|------------|----------------------------------------------------|
+| Frontend   | React.js, CSS Modules, React Toastify              |
+| Icons      | Lucide React                                       |
+| State Mgmt | Context API                                        |
+| Auth       | Firebase Authentication                            |
+| Backend    | Firebase Firestore (via Firebase SDK)              |
+| Payment    | RazorPay Integration                               |
+
+---
+
+## 🗂 Folder Structure
+
+```
+frontend/
+├── public/
+│ └── index.html
+├── src/
+│ ├── assets/ # Images, logos, etc.
+│ ├── components/
+│ │ ├── AppDownload/ # App banner section
+│ │ ├── ExploreMenu/ # Category filtering UI
+│ │ ├── FoodDisplay/ # List foods by category
+│ │ ├── FoodItem/ # Individual food card
+│ │ ├── Footer/ # Footer
+│ │ ├── Header/ # Top header with banner
+│ │ ├── LoginPopup/ # Login modal
+│ │ ├── Navbar/ # Site-wide navigation bar
+│ │ └── ProtectedRoute.jsx # Route guard logic
+│ ├── context/
+│ │ └── StoreContext.jsx # Context API store (legacy)
+│ ├── features/ # Redux Toolkit slices
+│ │ ├── auth/ # Firebase auth slice
+│ │ ├── cart/ # Cart slice + helpers
+│ │ └── food/ # Food fetch slice
+│ ├── pages/
+│ │ ├── Cart/ # Cart page
+│ │ ├── Home/ # Homepage
+│ │ ├── Orders/ # Past order history
+│ │ ├── Payment/ # RazorPay integration
+│ │ ├── PlaceOrder/ # Address & order confirmation
+│ │ └── UserProfile/ # Profile update form
+│ ├── firebase.js # Firebase SDK setup
+│ ├── App.jsx # Main route file
+│ ├── main.jsx # ReactDOM root + Providers
+│ └── index.css # Global styles
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
