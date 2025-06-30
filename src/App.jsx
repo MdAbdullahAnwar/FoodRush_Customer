@@ -10,6 +10,7 @@ import UserProfile from "./pages/UserProfile/UserProfile";
 import Orders from "./pages/Orders/Orders";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 import { StoreContext } from "./context/StoreContext";
+import TawkToWidget from "./components/TawkToWidget/TawkToWidget";
 import Payment from "./pages/Payment/Payment";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,7 +18,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [searchTerm, setSearchTerm] = useState(""); 
-  const { loading } = useContext(StoreContext);
+  
+  const { loading, userId } = useContext(StoreContext);
 
   if (loading)
     return (
@@ -75,6 +77,7 @@ const App = () => {
           />
         </Routes>
       </div>
+      {userId && <TawkToWidget />}
       <Footer />
     </>
   );

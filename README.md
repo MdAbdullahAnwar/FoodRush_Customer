@@ -1,6 +1,6 @@
 # 🍽️ FoodRush - Frontend (User Interface)
 
-This is the **Frontend** of the FoodRush food ordering application where users can browse dishes, add items to the cart, apply promo codes, place orders, and manage their profile.
+This is the **Frontend** of the FoodRush food ordering application where users can browse dishes, add items to the cart, apply promo codes, place orders, manage their profile and Live Chat with Admin.
 
 ---
 
@@ -12,7 +12,8 @@ This is the **Frontend** of the FoodRush food ordering application where users c
 ✅ Apply promo codes (FLAT10 / FLAT25 / FLAT50)  
 ✅ Place orders using RazorPay  
 ✅ View and track past orders  
-✅ Update profile and manage addresses  
+✅ Update profile and manage addresses
+✅ Live Chat: Talk to Admin instantly while browsing the site
 
 ---
 
@@ -26,6 +27,7 @@ This is the **Frontend** of the FoodRush food ordering application where users c
 | Auth       | Firebase Authentication                            |
 | Backend    | Firebase Firestore (via Firebase SDK)              |
 | Payment    | RazorPay Integration                               |
+| Chat       | Tawk.To                                            |
 
 ---
 
@@ -46,7 +48,8 @@ frontend/
 │ │ ├── Header/ # Top header with banner
 │ │ ├── LoginPopup/ # Login modal
 │ │ ├── Navbar/ # Site-wide navigation bar
-│ │ └── ProtectedRoute.jsx # Route guard logic
+│ │ ├── ProtectedRoute/ # Route guard logic
+│ │ └── TawkToWidget/ # Chat Widget
 │ ├── context/
 │ │ └── StoreContext.jsx # Context API store (legacy)
 │ ├── features/ # Redux Toolkit slices
