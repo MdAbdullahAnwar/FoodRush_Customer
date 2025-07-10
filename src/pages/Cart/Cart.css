@@ -102,6 +102,7 @@
 .cart-promocode-input {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .cart-promocode-input input {
@@ -184,4 +185,17 @@
     .cart-promocode{
         justify-content: start;
     }
+}
+
+@media (max-width: 500px) {
+  .cart-promocode-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cart-promocode-input input,
+  .cart-promocode-input button {
+    width: 100%;
+    min-width: unset;
+  }
 }

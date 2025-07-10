@@ -188,3 +188,36 @@
     width: 150px;
   }
 }
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-search-input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .mobile-search-icon {
+    display: block;
+  }
+}

@@ -21,7 +21,7 @@ const TawkToWidget = () => {
           name: user.displayName || "Customer",
           email: user.email || `user_${user.uid}@app.com`,
         }, function (error) {
-          if (error) console.error("Tawk.to setAttributes error:", error);
+          // if (error) console.error("Tawk.to setAttributes error:", error);
         });
       }
     };
